@@ -1,26 +1,21 @@
 import BreadCrumbs from './components/breadCrumbs/breadCrumbs'
-import Feature from './components/breadCrumbs/feature/feature'
+import Feature from './components/feature/feature'
 import Slider from './components/slider/slider'
 import './App.css'
+import Button from './components/btn/button'
+import SelectSize from './components/select/selectSize'
 
 
 function App() {
   return (
     <div className="App">
-      <BreadCrumbs />
-      <Feature />
-      <Slider />
+      {/*<BreadCrumbs />*/}
+      {/*<Feature />*/}
+      {/*<Slider />*/}
 
-      <div>
-        <div>
-          <img src="" alt=""/>
-          <h1>Пиджак CLASP</h1>
-          <span>27 000 руб.</span>
-        </div>
-        <div>
+      <Button>в корзину</Button>
 
-        </div>
-      </div>
+      <SelectSize />
 
     </div>
   );

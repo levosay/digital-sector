@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "FuturaPT";
+  src: local("FuturaPT"), url(/public/fonts/FuturaPT-medium.ttf) format("opentype");
+}
+.select {
+  position: relative;
+  max-width: 233px;
+  font-family: FuturaPT, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+}
+.select-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #000;
+  border-left: 1px solid #000;
+}
+.select__img {
+  position: absolute;
+  top: 21px;
+  right: 21px;
+}
+.select__option {
+  display: flex;
+  align-items: center;
+  padding-left: 18px;
+  height: 50px;
+  margin: 0;
+  border-bottom: 1px solid #000;
+  border-right: 1px solid #000;
+  background-color: #fff;
+  text-transform: uppercase;
+}
+.select__option:hover {
+  cursor: pointer;
+  background-color: #EEE;
+}
+.select__option:active {
+  background-color: #FAF7CB;
+}
+.select__option-mane {
+  border-top: 1px solid #000;
+  border-left: 1px solid #000;
+  background-color: #EEE;
+}
+
+/*# sourceMappingURL=selectSize.css.map */

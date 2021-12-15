@@ -1,0 +1,44 @@
+@font-face
+  font-family: 'FuturaPT'
+  src: local('FuturaPT'), url(/public/fonts/FuturaPT-medium.ttf) format('opentype')
+
+.select
+  position: relative
+  max-width: 233px
+  font-family: FuturaPT, sans-serif
+  font-style: normal
+  font-weight: 500
+  font-size: 16px
+  line-height: 21px
+  &-list
+    list-style-type: none
+    margin: 0
+    padding: 0
+    border-top: 1px solid #000
+    border-left: 1px solid #000
+  &__img
+    position: absolute
+    top: 21px
+    right: 21px
+  &__option
+    display: flex
+    align-items: center
+    padding-left: 18px
+    height: 50px
+    margin: 0
+    border-bottom: 1px solid #000
+    border-right: 1px solid #000
+    background-color: #fff
+    text-transform: uppercase
+    &:hover
+      cursor: pointer
+      background-color: #EEE
+    &:active
+      background-color: #FAF7CB
+    &-mane
+      border-top: 1px solid #000
+      border-left: 1px solid #000
+      background-color: #EEE
+
+
+

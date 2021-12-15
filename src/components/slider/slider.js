@@ -23,13 +23,15 @@ const Slider = () => {
       <div className="slider__footer">
         {
           dataSlider.map(item => (
-            <div className="list-wrapper">
+            <div
+              className="list-wrapper"
+              onMouseEnter={() => togglePants(item)}
+            >
               <img
                 className="list-wrapper__img"
                 key={item.id}
                 src={item.url}
                 alt={item.title}
-                onMouseEnter={() => togglePants(item)}
               />
             </div>
           ))
