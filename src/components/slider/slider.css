@@ -1,0 +1,44 @@
+.slider {
+  width: 396px;
+}
+.slider__demonstration {
+  width: 396px;
+  height: 566px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  background: #F2F2F2;
+  cursor: pointer;
+}
+.slider__footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.list-wrapper {
+  width: 67px;
+  height: 67px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  background: #F2F2F2;
+}
+.list-wrapper:hover {
+  box-sizing: border-box;
+  border: 2px solid #000;
+  cursor: pointer;
+}
+.list-wrapper:hover .list-wrapper__img {
+  width: 22px;
+  height: 53px;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+.list-wrapper__img {
+  width: 22px;
+  height: 67px;
+}
+
+/*# sourceMappingURL=slider.css.map */

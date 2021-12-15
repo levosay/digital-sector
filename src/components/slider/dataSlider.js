@@ -4,42 +4,36 @@ import pants3 from  '../../img/pants/pants_3.png'
 import pants4 from  '../../img/pants/pants_4.png'
 import pants5 from  '../../img/pants/pants_5.png'
 import pants6 from  '../../img/pants/pants_6.png'
-import pants7 from  '../../img/pants/pants_7.png'
 
 const DataSlider = [
   {
     id: new Date(),
     url: pants1,
-    title: 'M'
-  },
-  {
-    id: new Date(),
-    url: pants2,
     title: 'XS'
   },
   {
     id: new Date(),
-    url: pants3,
+    url: pants2,
     title: 'S'
   },
   {
     id: new Date(),
-    url: pants4,
+    url: pants3,
     title: 'M'
   },
   {
     id: new Date(),
-    url: pants5,
+    url: pants4,
     title: 'L'
   },
   {
     id: new Date(),
-    url: pants6,
+    url: pants5,
     title: 'XL'
   },
   {
     id: new Date(),
-    url: pants7,
+    url: pants6,
     title: 'XXL'
   },
 ]
