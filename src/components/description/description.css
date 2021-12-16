@@ -1,3 +1,103 @@
+@font-face {
+  font-family: "Inter";
+  src: local("Inter"), url(/public/fonts/Inter-Bold.ttf) format("opentype");
+}
+@font-face {
+  font-family: "FuturaPT";
+  src: local("FuturaPT"), url(/public/fonts/FuturaPT-regular.ttf) format("opentype");
+}
+.description {
+  max-width: 520px;
+  margin-top: 99px;
+  margin-left: 126px;
+  display: grid;
+  grid-auto-rows: minmax(min-content, max-content);
+  gap: 0 0;
+  grid-template-areas: "head head" "select sel-sec" "sizes sel-sec" "info sel-sec";
+}
+.description__head {
+  grid-area: head;
+  margin-bottom: 30px;
+}
+.description__select-wrapper {
+  grid-area: select;
+  display: flex;
+  margin-bottom: 30px;
+}
+.description__size-wrapper {
+  grid-area: sizes;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.description__description__info {
+  grid-area: info;
+}
+.description__head {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.description__icon-return {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+.description__title {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  margin: 0;
+}
+.description__sum {
+  font-family: FuturaPT, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+}
+.description__size-link {
+  font-family: FuturaPT, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  text-decoration: none;
+  color: #000;
+}
 
+.info-text {
+  font-family: FuturaPT, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.select-section-wrapper {
+  grid-area: sel-sec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 25px;
+  cursor: pointer;
+}
+.select-section__icon {
+  width: 17px;
+  height: 17px;
+}
+
+.toFavorite {
+  background: #FAF7CB;
+}
+
+.removeFavorite {
+  background: #EEE;
+}
 
 /*# sourceMappingURL=description.css.map */

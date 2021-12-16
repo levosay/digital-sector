@@ -2,24 +2,13 @@ import React, {useState} from 'react'
 import './selectSize.css'
 import arrowSelectOpen from '../../img/icon/arrow-select-open.svg'
 import arrowSelectClose from '../../img/icon/arrow-select-close.svg'
-import dataSelect from './dataSelect'
 
 
-const SelectSize = ({dataSize, setDataSize}) => {
+const SelectSize = ({dataSize}) => {
   const [open, setOpen] = useState(false)
   const [select, setSelect] = useState(false)
 
   const openSelect = (value) => {
-    if (open) {
-      const newDataSelect = dataSelect.map(item => {
-        return {
-          ...item,
-          active: item.title === value
-        }
-      });
-
-      setDataSize(newDataSelect)
-    }
     setSelect(value)
     setOpen(prev => !prev)
   }
@@ -28,21 +17,23 @@ const SelectSize = ({dataSize, setDataSize}) => {
     <div className="select">
       <img
         className="select__img"
-        src={open ? arrowSelectOpen : arrowSelectClose}
-        alt={open ? 'open' : 'close'}
+        src={open ? arrowSelectClose : arrowSelectOpen}
+        alt={open ? 'close' : 'open'}
       />
       <ul className="select-list">
         {open
           ?
           dataSize.map(item => (
-            <li
-              key={item.id}
-              className="select__option"
-              data-size={item.title}
-              onClick={() => openSelect(item.title)}
-            >
-              {item.title}
-            </li>
+            item.active ? (
+              <li
+                key={item.id}
+                className="select__option"
+                data-size={item.title}
+                onClick={() => openSelect(item.title)}
+              >
+                {item.title}
+              </li>
+            ) : null
           )) :
           (
           <li
@@ -54,38 +45,6 @@ const SelectSize = ({dataSize, setDataSize}) => {
           </li>
           )}
       </ul>
-
-      {/*<span*/}
-      {/*  className="select__option select__option-mane"*/}
-      {/*  onClick={selectOpen}*/}
-      {/*>*/}
-      {/*  {select ? select : 'Размер: S'}*/}
-      {/*</span>*/}
-      {/*<img*/}
-      {/*  className="select__img"*/}
-      {/*  src={open ? arrowSelectOpen : arrowSelectClose}*/}
-      {/*  alt={open ? 'open' : 'close'}*/}
-      {/*  onClick={selectOpen}*/}
-      {/*/>*/}
-      {/*{*/}
-      {/*  open ? (*/}
-      {/*    <ul className="select-list">*/}
-      {/*      <li*/}
-      {/*        className="select__option"*/}
-      {/*        onClick={(event) => selectGoods(event.target.innerText)}*/}
-      {/*      >*/}
-      {/*        Размер: M*/}
-      {/*      </li>*/}
-      {/*      <li*/}
-      {/*        className="select__option"*/}
-      {/*        onClick={(event) => selectGoods(event.target.innerText)}*/}
-      {/*      >*/}
-      {/*        Размер: L*/}
-      {/*      </li>*/}
-      {/*    </ul>*/}
-      {/*  )*/}
-      {/*    : null*/}
-      {/*}*/}
     </div>
   )
 }
