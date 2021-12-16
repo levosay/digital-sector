@@ -4,7 +4,34 @@ body {
 }
 
 .App {
-  display: flex;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 10% 20% 50%;
+  grid-template-areas: "crumbs slider description" "feature slider description" "feature slider description" "feature slider description";
+}
+
+.bread-crumbs {
+  grid-area: crumbs;
+}
+
+.feature {
+  grid-area: feature;
+}
+
+.slider {
+  grid-area: slider;
+}
+
+.description {
+  grid-area: description;
+}
+
+@media (max-width: 768px) {
+  .App {
+    margin-top: 36px;
+    grid-template-columns: 40% 50%;
+    grid-template-areas: "crumbs description" "slider description" "slider feature" "slider feature";
+  }
 }
 
 /*# sourceMappingURL=App.css.map */

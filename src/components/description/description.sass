@@ -6,6 +6,7 @@
   src: local('FuturaPT'), url(/public/fonts/FuturaPT-regular.ttf) format('opentype')
 
 .description
+  grid-area: description
   max-width: 520px
   margin-top: 99px
   margin-left: 126px
@@ -19,7 +20,7 @@
   &__select-wrapper
     grid-area: select
     display: flex
-    margin-bottom: 30px
+    margin-bottom: 33px
   &__size-wrapper
     grid-area: sizes
     display: flex
@@ -35,6 +36,7 @@
     position: absolute
     top: 10px
     right: 20px
+    cursor: pointer
   &__title
     font-family: Inter, sans-serif
     font-style: normal
@@ -77,8 +79,21 @@
     width: 17px
     height: 17px
 
-
 .toFavorite
   background: #FAF7CB
 .removeFavorite
   background: #EEE
+
+@media (max-width: 768px)
+  .description
+    margin-top: 0
+    margin-left: 40px
+    grid-auto-columns: minmax(min-content, max-content)
+    grid-template-areas: "head" "select" "sizes" "info"
+    &__select-wrapper
+      flex-direction: column
+      margin-bottom: 35px
+    &__size-wrapper
+      margin-bottom: 15px
+  .select-section-wrapper
+    display: none

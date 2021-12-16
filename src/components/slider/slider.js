@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import dataSlider from './dataSlider'
 import './slider.css'
 import manePants from '../../img/pants/pants_1.png'
-
+import '../../App.css'
 
 const Slider = () => {
   const [pants, setPants] = useState(false)

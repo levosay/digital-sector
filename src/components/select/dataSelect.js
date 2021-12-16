@@ -1,24 +1,24 @@
 const ClothesSize = [
   {
-    id: new Date().valueOf() / 1000 / 60 / Math.random(),
+    id: 1,
     size: 'S',
     title: 'Размер: S',
     active: true,
   },
   {
-    id: new Date().valueOf() / 1000 / 60 / Math.random(),
+    id: 2,
     size: 'M',
     title: 'Размер: M',
     active: true,
   },
   {
-    id: new Date().valueOf() / 1000 / 60 / Math.random(),
+    id: 3,
     size: 'L',
     title: 'Размер: L',
     active: true,
   },
   {
-    id: new Date().valueOf() / 1000 / 60 / Math.random(),
+    id: 4,
     size: 'XS',
     title: 'Размер: XS',
     active: false,

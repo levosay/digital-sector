@@ -2,12 +2,15 @@ import React from 'react'
 import './iconSize.css'
 
 const IconSize = ({dataSize}) => {
-
+  console.log('dataSize ', dataSize)
   return (
     <div className="size-icon">
       {dataSize.sort((a,b) => (a.active > b.active) ? 1 : ((b.active > a.active) ? -1 : 0))
         .map(item => (
-        <div className="size-icon-wrapper">
+        <div
+          key={item.id}
+          className="size-icon-wrapper"
+        >
           <div className="size-icon__line"/>
           <span
             key={item.id}

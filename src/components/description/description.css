@@ -7,6 +7,7 @@
   src: local("FuturaPT"), url(/public/fonts/FuturaPT-regular.ttf) format("opentype");
 }
 .description {
+  grid-area: description;
   max-width: 520px;
   margin-top: 99px;
   margin-left: 126px;
@@ -22,7 +23,7 @@
 .description__select-wrapper {
   grid-area: select;
   display: flex;
-  margin-bottom: 30px;
+  margin-bottom: 33px;
 }
 .description__size-wrapper {
   grid-area: sizes;
@@ -42,6 +43,7 @@
   position: absolute;
   top: 10px;
   right: 20px;
+  cursor: pointer;
 }
 .description__title {
   font-family: Inter, sans-serif;
@@ -98,6 +100,26 @@
 
 .removeFavorite {
   background: #EEE;
+}
+
+@media (max-width: 768px) {
+  .description {
+    margin-top: 0;
+    margin-left: 40px;
+    grid-auto-columns: minmax(min-content, max-content);
+    grid-template-areas: "head" "select" "sizes" "info";
+  }
+  .description__select-wrapper {
+    flex-direction: column;
+    margin-bottom: 35px;
+  }
+  .description__size-wrapper {
+    margin-bottom: 15px;
+  }
+
+  .select-section-wrapper {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=description.css.map */

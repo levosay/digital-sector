@@ -6,7 +6,9 @@ import arrowSelectClose from '../../img/icon/arrow-select-close.svg'
 
 const SelectSize = ({dataSize}) => {
   const [open, setOpen] = useState(false)
-  const [select, setSelect] = useState(false)
+  const [select, setSelect] = useState(dataSize[0].title)
+
+  const normalizedArray = dataSize.filter(item => item.active)
 
   const openSelect = (value) => {
     setSelect(value)
@@ -23,25 +25,22 @@ const SelectSize = ({dataSize}) => {
       <ul className="select-list">
         {open
           ?
-          dataSize.map(item => (
-            item.active ? (
-              <li
-                key={item.id}
-                className="select__option"
-                data-size={item.title}
-                onClick={() => openSelect(item.title)}
-              >
-                {item.title}
-              </li>
-            ) : null
+          normalizedArray.map(item => (
+            <li
+              key={item.id}
+              className="select__option"
+              onClick={() => openSelect(item.title)}
+            >
+              {item.title}
+            </li>
           )) :
           (
           <li
             className="select__option select__option-mane"
-            data-size={select ? select : dataSize[0].title}
-            onClick={() => openSelect(dataSize[0].title)}
+            onClick={() => setOpen(prev => !prev)}
+            // onClick={() => openSelect(normalizedArray[0].title)}
           >
-            {select ? select : dataSize[0].title}
+            {select}
           </li>
           )}
       </ul>

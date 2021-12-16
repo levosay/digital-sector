@@ -3,6 +3,7 @@ import Button from '../btn/button'
 import SelectSize from '../select/selectSize'
 import returnIcon from '../../img/icon/return.svg'
 import './description.css'
+import '../../App.css'
 import IconSize from '../iconSize/iconSize'
 import favoriteIcon from '../../img/icon/favorite.svg'
 
@@ -21,7 +22,12 @@ const Description = ({dataSize, setDataSize}) => {
           dataSize={dataSize}
           setDataSize={setDataSize}
         />
-        <Button>в корзину</Button>
+        <Button
+          favorite={favorite}
+          setFavorite={setFavorite}
+        >
+          в корзину
+        </Button>
 
       </div>
       <div className="description__size-wrapper">

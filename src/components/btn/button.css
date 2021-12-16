@@ -3,7 +3,11 @@
   src: local("FuturaPT"), url(/public/fonts/FuturaPT-medium.ttf) format("opentype");
 }
 .button {
+  position: relative;
   min-width: 219px;
+}
+.button__btn {
+  width: 100%;
   height: 50px;
   font-family: FuturaPT, sans-serif;
   font-style: normal;
@@ -17,14 +21,36 @@
   background: #000;
   color: #fff;
 }
-.button:hover {
+.button__btn:hover {
   background: #474c58;
   transition: all 150ms linear;
 }
-.button:active {
+.button__btn:active {
   background: #478767;
   transform: translateY(-1px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.button__icon {
+  display: none;
+  position: absolute;
+  top: 17px;
+  right: 18px;
+  z-index: 22;
+  border-radius: 50%;
+}
+
+.favIconOn {
+  background: #4A8C6B;
+}
+
+.favIconOff {
+  background: transparent;
+}
+
+@media (max-width: 768px) {
+  .button__icon {
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=button.css.map */

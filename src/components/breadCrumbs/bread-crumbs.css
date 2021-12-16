@@ -1,3 +1,14 @@
+@font-face {
+  font-family: "FuturaPT";
+  src: local("FuturaPT"), url(/public/fonts/FuturaPT-medium.ttf) format("opentype");
+}
+.bread-crumbs {
+  grid-area: crumbs;
+  margin-top: 99px;
+}
+.bread-crumbs__img {
+  opacity: 0.3;
+}
 .bread-crumbs__link {
   color: red;
 }
@@ -8,8 +19,24 @@
   margin-right: 16px;
 }
 .bread-crumbs__crumb-link {
+  font-family: FuturaPT, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #000;
+  opacity: 0.3;
   margin-right: 16px;
   text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .bread-crumbs {
+    margin-top: 8px;
+    margin-bottom: 62px;
+  }
 }
 
 /*# sourceMappingURL=bread-crumbs.css.map */

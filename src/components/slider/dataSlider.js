@@ -7,32 +7,32 @@ import pants6 from  '../../img/pants/pants_6.png'
 
 const DataSlider = [
   {
-    id: new Date().valueOf() / 1000 / 60 / Math.random() ,
+    id: 1,
     url: pants1,
     title: 'XS'
   },
   {
-    id: new Date().valueOf() / 1000 / 60 / Math.random() ,
+    id: 2,
     url: pants2,
     title: 'S'
   },
   {
-    id: new Date().valueOf() / 1000 / 60 / Math.random() ,
+    id: 3,
     url: pants3,
     title: 'M'
   },
   {
-    id: new Date().valueOf() / 1000 / 60 / Math.random() ,
+    id: 4,
     url: pants4,
     title: 'L'
   },
   {
-    id: new Date().valueOf() / 1000 / 60 / Math.random() ,
+    id: 5,
     url: pants5,
     title: 'XL'
   },
   {
-    id: new Date().valueOf() / 1000 / 60 / Math.random() ,
+    id: 6,
     url: pants6,
     title: 'XXL'
   },
