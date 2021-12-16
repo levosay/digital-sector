@@ -5,12 +5,15 @@
 .select
   position: relative
   max-width: 233px
+  height: 50px
   font-family: FuturaPT, sans-serif
   font-style: normal
   font-weight: 500
   font-size: 16px
   line-height: 21px
   &-list
+    position: absolute
+    width: 100%
     list-style-type: none
     margin: 0
     padding: 0
@@ -20,6 +23,7 @@
     position: absolute
     top: 21px
     right: 21px
+    z-index: 2
   &__option
     display: flex
     align-items: center
@@ -30,15 +34,19 @@
     border-right: 1px solid #000
     background-color: #fff
     text-transform: uppercase
+
     &:hover
       cursor: pointer
       background-color: #EEE
     &:active
       background-color: #FAF7CB
     &-mane
+      display: flex
+      align-items: center
+      padding-left: 18px
+      height: 50px
+      margin: 0
       border-top: 1px solid #000
       border-left: 1px solid #000
       background-color: #EEE
-
-
 

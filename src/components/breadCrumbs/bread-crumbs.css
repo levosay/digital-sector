@@ -1,0 +1,15 @@
+.bread-crumbs__link {
+  color: red;
+}
+.bread-crumbs__link-home {
+  margin-right: 19px;
+}
+.bread-crumbs__link-next {
+  margin-right: 16px;
+}
+.bread-crumbs__crumb-link {
+  margin-right: 16px;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=bread-crumbs.css.map */

@@ -1,0 +1,10 @@
+.feature {
+  display: flex;
+  flex-direction: column;
+}
+.feature__img {
+  width: 110px;
+  height: 110px;
+}
+
+/*# sourceMappingURL=feature.css.map */

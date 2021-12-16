@@ -2,7 +2,7 @@
   width: 396px;
 }
 .slider__demonstration {
-  width: 396px;
+  width: 100%;
   height: 566px;
   display: flex;
   justify-content: center;

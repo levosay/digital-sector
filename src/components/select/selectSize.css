@@ -5,6 +5,7 @@
 .select {
   position: relative;
   max-width: 233px;
+  height: 50px;
   font-family: FuturaPT, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -12,6 +13,8 @@
   line-height: 21px;
 }
 .select-list {
+  position: absolute;
+  width: 100%;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -22,6 +25,7 @@
   position: absolute;
   top: 21px;
   right: 21px;
+  z-index: 2;
 }
 .select__option {
   display: flex;
@@ -42,6 +46,11 @@
   background-color: #FAF7CB;
 }
 .select__option-mane {
+  display: flex;
+  align-items: center;
+  padding-left: 18px;
+  height: 50px;
+  margin: 0;
   border-top: 1px solid #000;
   border-left: 1px solid #000;
   background-color: #EEE;
