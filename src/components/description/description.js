@@ -2,8 +2,10 @@ import React from 'react'
 import Button from '../btn/button'
 import SelectSize from '../select/selectSize'
 import returnIcon from '../../img/icon/return.svg'
+import './description.css'
+import IconSize from '../iconSize/iconSize'
 
-const Description = () => {
+const Description = ({dataSize, setDataSize}) => {
   return (
     <div>
       <img src={returnIcon} alt="Back"/>
@@ -12,17 +14,19 @@ const Description = () => {
       <div>
         <Button>в корзину</Button>
 
-        <SelectSize />
+        <SelectSize
+          dataSize={dataSize}
+          setDataSize={setDataSize}
+        />
         <div>
           <img src="" alt=""/>
         </div>
       </div>
       <div>
-        <div>
-          <span data-size="XS">XS</span>
-          <span data-size="S">S</span>
-          <span data-size="M">M</span>
-        </div>
+        <IconSize
+          dataSize={dataSize}
+          setDataSize={setDataSize}
+        />
         <span>Как выбрать размер?</span>
       </div>
       <div>

@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "FuturaPT";
+  src: local("FuturaPT"), url(/public/fonts/FuturaPT-regular.ttf) format("opentype");
+}
+.size-icon {
+  display: flex;
+}
+.size-icon-wrapper {
+  position: relative;
+  overflow: hidden;
+  margin-right: 6px;
+}
+.size-icon__line {
+  position: absolute;
+  left: 50%;
+  width: 1px;
+  height: 100%;
+  background: #E5E5E5;
+  transform: rotate(-45deg);
+  z-index: -1;
+}
+.size-icon__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 41px;
+  height: 41px;
+  font-family: FuturaPT, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  border: 1px solid #E5E5E5;
+  border-radius: 50%;
+  box-sizing: border-box;
+  z-index: 4;
+}
+
+.stock {
+  background: transparent;
+}
+
+.away {
+  background: #EEE;
+}
+
+/*# sourceMappingURL=iconSize.css.map */

@@ -5,24 +5,21 @@ import arrowSelectClose from '../../img/icon/arrow-select-close.svg'
 import dataSelect from './dataSelect'
 
 
-const SelectSize = () => {
+const SelectSize = ({dataSize, setDataSize}) => {
   const [open, setOpen] = useState(false)
   const [select, setSelect] = useState(false)
 
-
-
-  // const selectGoods = (value) => {
-  //   setSelect(value)
-  //   setOpen(prev => !prev)
-  // }
-  //
-  // const selectOpen = () => {
-  //   // document.querySelector('.select__option-mane').style = "display: none"
-  //
-  //   setSelect('Размер: S')
-  //   setOpen(prev => !prev)
-  // }
   const openSelect = (value) => {
+    if (open) {
+      const newDataSelect = dataSelect.map(item => {
+        return {
+          ...item,
+          active: item.title === value
+        }
+      });
+
+      setDataSize(newDataSelect)
+    }
     setSelect(value)
     setOpen(prev => !prev)
   }
@@ -37,12 +34,12 @@ const SelectSize = () => {
       <ul className="select-list">
         {open
           ?
-          dataSelect.map(item => (
+          dataSize.map(item => (
             <li
               key={item.id}
               className="select__option"
               data-size={item.title}
-              onClick={(event) => openSelect(event.target.innerText)}
+              onClick={() => openSelect(item.title)}
             >
               {item.title}
             </li>
@@ -50,10 +47,10 @@ const SelectSize = () => {
           (
           <li
             className="select__option select__option-mane"
-            data-size={select ? select : dataSelect[0].size}
-            onClick={(event) => openSelect(event.target.innerText)}
+            data-size={select ? select : dataSize[0].title}
+            onClick={() => openSelect(dataSize[0].title)}
           >
-            {select ? select : dataSelect[0].title}
+            {select ? select : dataSize[0].title}
           </li>
           )}
       </ul>
