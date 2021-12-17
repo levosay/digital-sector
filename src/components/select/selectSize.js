@@ -20,6 +20,7 @@ const SelectSize = ({dataSize}) => {
         className="select__img"
         src={open ? arrowSelectClose : arrowSelectOpen}
         alt={open ? 'close' : 'open'}
+        onClick={() => setOpen(prev => !prev)}
       />
       <ul className="select-list">
         {open
