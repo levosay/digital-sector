@@ -1,11 +1,10 @@
 import React, {useState} from 'react'
-import Button from '../btn/button'
-import SelectSize from '../select/selectSize'
-import IconSize from '../iconSize/iconSize'
+import Button from '../btn/Button'
+import SelectSize from '../select/SelectSize'
+import IconSize from '../iconSize/IconSize'
 import returnIcon from '../../img/icon/return.svg'
 import favoriteIcon from '../../img/icon/favorite.svg'
 import './description.css'
-import '../../App.css'
 
 const Description = ({dataSize, setDataSize}) => {
   const [favorite, setFavorite] = useState(false)

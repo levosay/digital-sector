@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import dataSlider from './dataSlider'
 import manePants from '../../img/pants/pants_1.png'
-import '../../App.css'
 import './slider.css'
 
 const Slider = () => {
