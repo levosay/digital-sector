@@ -1,5 +1,6 @@
 import React from 'react'
 import favoriteIcon from '../../img/icon/favoriteInBtn.svg'
+import favoriteIconOn from '../../img/icon/favorite-icon-btn-on.svg'
 import './button.css'
 
 const Button = ({onClick, favorite, setFavorite, children}) => {
@@ -12,9 +13,8 @@ const Button = ({onClick, favorite, setFavorite, children}) => {
         {children}
       </button>
       <img
-        className={favorite ? "button__icon favIconOn" : "button__icon" +
-          " favIconOff"}
-        src={favoriteIcon}
+        className="button__icon"
+        src={favorite ? favoriteIconOn : favoriteIcon}
         alt="favorite"
         onClick={() => setFavorite(prev => !prev)}
       />
