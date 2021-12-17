@@ -121,5 +121,33 @@
     display: none;
   }
 }
+@media (max-width: 320px) {
+  .description {
+    grid-template-areas: "head" "sizes" "select" "info";
+    margin-left: 0;
+  }
+  .description__head {
+    margin-bottom: 29px;
+  }
+  .description__size-link {
+    font-size: 16px;
+    white-space: nowrap;
+  }
+  .description__title {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 2px;
+  }
+  .description__sum {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .description__size-wrapper {
+    margin-bottom: 29px;
+  }
+  .description__select-wrapper {
+    margin-bottom: 32px;
+  }
+}
 
 /*# sourceMappingURL=description.css.map */

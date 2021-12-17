@@ -1,6 +1,9 @@
 @font-face
   font-family: 'FuturaPT'
   src: local('FuturaPT'), url(/public/fonts/FuturaPT-medium.ttf) format('opentype')
+@font-face
+  font-family: 'FuturaPT'
+  src: local('FuturaPT'), url(/public/fonts/FuturaPT-regular.ttf) format('opentype')
 
 .button
   position: relative
@@ -29,7 +32,7 @@
   &__icon
     display: none
     position: absolute
-    top: 17px
+    top: 33%
     right: 18px
     z-index: 22
     border-radius: 50%
@@ -43,3 +46,12 @@
   .button
     &__icon
       display: block
+
+@media (max-width: 320px)
+  .button
+    &__btn
+      height: 40px
+      font-size: 15px
+      text-align: left
+      padding-left: 15px
+      font-weight: normal

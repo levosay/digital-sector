@@ -1,6 +1,9 @@
 @font-face
   font-family: 'FuturaPT'
   src: local('FuturaPT'), url(/public/fonts/FuturaPT-medium.ttf) format('opentype')
+@font-face
+  font-family: 'FuturaPT'
+  src: local('FuturaPT'), url(/public/fonts/FuturaPT-regular.ttf) format('opentype')
 
 .select
   position: relative
@@ -21,8 +24,8 @@
     z-index: 10
   &__img
     position: absolute
-    top: 21px
-    right: 21px
+    top: 45%
+    right: 23px
     z-index: 11
   &__option
     display: flex
@@ -55,3 +58,14 @@
     height: 50px
     width: 100%
     margin-bottom: 6px
+
+@media (max-width: 320px)
+  .select
+    height: 40px
+    font-weight: normal
+    &__option
+      height: 40px
+      font-size: 15px
+      padding-left: 15px
+      &-mane
+        padding-left: 15px

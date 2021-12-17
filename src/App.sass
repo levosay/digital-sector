@@ -4,21 +4,31 @@ body
 .App
   justify-content: center
   display: grid
-  grid-template-columns: 10% 20% 50%
-  grid-template-areas: "crumbs slider description" "feature slider description" "feature slider description" "feature slider description"
+  grid-template-columns: 10% 20.5% 50%
+  grid-template-rows: 182px 150px 1fr 1fr
+  grid-template-areas: "crumbs slider description" "feature slider description" "feature slider info" "feature slider info"
 
-.bread-crumbs
-  grid-area: crumbs
-.feature
-  grid-area: feature
-.slider
-  grid-area: slider
-.description
-  grid-area: description
 
+.description-info
+  grid-area: info
+  max-width: 453px
+  margin-left: 126px
 @media (max-width: 768px)
   .App
     margin-top: 36px
     grid-template-columns: 40% 50%
-    grid-template-areas: "crumbs description" "slider description" "slider feature" "slider feature"
+    grid-template-rows: 82px 200px 275px 1fr
+    grid-template-areas: "crumbs description" "slider description" "slider info" "slider feature"
+  .description-info
+    max-width: 453px
+    margin-left: 40px
 
+@media (max-width: 320px)
+  .App
+    grid-template-columns: 100%
+    grid-template-rows: minmax(min-content, max-content)
+    grid-template-areas: "description" "slider" "info" "feature"
+    margin: 26px 20px
+  .description-info
+    max-width: 453px
+    margin-left: 0

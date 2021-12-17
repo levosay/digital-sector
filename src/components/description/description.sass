@@ -97,3 +97,24 @@
       margin-bottom: 15px
   .select-section-wrapper
     display: none
+
+@media (max-width: 320px)
+  .description
+    grid-template-areas: "head" "sizes" "select" "info"
+    margin-left: 0
+    &__head
+      margin-bottom: 29px
+    &__size-link
+      font-size: 16px
+      white-space: nowrap
+    &__title
+      font-size: 20px
+      line-height: 24px
+      margin-bottom: 2px
+    &__sum
+      font-size: 16px
+      line-height: 21px
+    &__size-wrapper
+      margin-bottom: 29px
+    &__select-wrapper
+      margin-bottom: 32px

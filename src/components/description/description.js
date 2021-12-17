@@ -36,10 +36,7 @@ const Description = ({dataSize, setDataSize}) => {
         />
         <a className="description__size-link" href="#">Как выбрать размер?</a>
       </div>
-      <div className="description__info">
-        <p className="info-text">Безупречный пиджак с мужского плеча, на шелковой подкладке с ассиметричным поясом, подчеркивающим талию Прекрасно комбинируется с остальными изделиями из коллекции.</p>
-        <p className="info-text">Сочетайте с кожаным топом и брюками для рабочего дня в офисе, или же предайте образу дерзости, остановив его в расстегнутом виде</p>
-      </div>
+
       <div
         className={
           favorite
