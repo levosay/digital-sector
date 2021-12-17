@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
 import dataSlider from './dataSlider'
-import './slider.css'
 import manePants from '../../img/pants/pants_1.png'
 import '../../App.css'
+import './slider.css'
 
 const Slider = () => {
   const [pants, setPants] = useState(false)
@@ -13,6 +13,7 @@ const Slider = () => {
 
   return (
     <div className="slider">
+
       <div className="slider__demonstration">
         <img
           className="demonstration__img"
@@ -20,6 +21,7 @@ const Slider = () => {
           alt={ pants ? pants.title : 'XS'}
         />
       </div>
+
       <div className="slider__footer">
         {
           dataSlider.map(item => (
@@ -37,6 +39,7 @@ const Slider = () => {
           ))
         }
       </div>
+
     </div>
   )
 }

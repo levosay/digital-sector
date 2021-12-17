@@ -1,10 +1,8 @@
 import React from 'react'
-import './button.css'
 import favoriteIcon from '../../img/icon/favoriteInBtn.svg'
+import './button.css'
 
 const Button = ({onClick, favorite, setFavorite, children}) => {
-
-
   return (
     <div className="button">
       <button

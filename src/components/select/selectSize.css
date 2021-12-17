@@ -8,7 +8,7 @@
 }
 .select {
   position: relative;
-  width: 233px;
+  min-width: 233px;
   font-family: FuturaPT, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -22,7 +22,6 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
-  box-sizing: content-box;
   z-index: 10;
 }
 .select__img {

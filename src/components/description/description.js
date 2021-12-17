@@ -1,22 +1,24 @@
 import React, {useState} from 'react'
 import Button from '../btn/button'
 import SelectSize from '../select/selectSize'
+import IconSize from '../iconSize/iconSize'
 import returnIcon from '../../img/icon/return.svg'
+import favoriteIcon from '../../img/icon/favorite.svg'
 import './description.css'
 import '../../App.css'
-import IconSize from '../iconSize/iconSize'
-import favoriteIcon from '../../img/icon/favorite.svg'
 
 const Description = ({dataSize, setDataSize}) => {
   const [favorite, setFavorite] = useState(false)
 
   return (
     <div className="description">
+
       <div className="description__head">
         <img className="description__icon-return" src={returnIcon} alt="Back"/>
         <h1 className="description__title">Пиджак CLASP</h1>
         <span className="description__sum">27000 руб.</span>
       </div>
+
       <div className="description__select-wrapper">
         <SelectSize
           dataSize={dataSize}
@@ -28,8 +30,8 @@ const Description = ({dataSize, setDataSize}) => {
         >
           в корзину
         </Button>
-
       </div>
+
       <div className="description__size-wrapper">
         <IconSize
           dataSize={dataSize}
@@ -51,6 +53,7 @@ const Description = ({dataSize, setDataSize}) => {
           alt="Add Favorite"
         />
       </div>
+
     </div>
   )
 }

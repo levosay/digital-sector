@@ -1,8 +1,7 @@
 import React, {useState} from 'react'
-import './selectSize.css'
 import arrowSelectOpen from '../../img/icon/arrow-select-open.svg'
 import arrowSelectClose from '../../img/icon/arrow-select-close.svg'
-
+import './selectSize.css'
 
 const SelectSize = ({dataSize}) => {
   const [open, setOpen] = useState(false)
@@ -38,7 +37,6 @@ const SelectSize = ({dataSize}) => {
           <li
             className="select__option select__option-mane"
             onClick={() => setOpen(prev => !prev)}
-            // onClick={() => openSelect(normalizedArray[0].title)}
           >
             {select}
           </li>
