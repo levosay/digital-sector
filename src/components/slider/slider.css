@@ -48,9 +48,10 @@
 @media (max-width: 768px) {
   .slider {
     width: 314px;
+    margin-left: 0;
   }
   .slider__demonstration {
-    height: 449px;
+    height: 360px;
   }
   .slider__footer {
     display: grid;
@@ -70,6 +71,10 @@
     align-items: center;
     max-width: 280px;
     margin-bottom: 14px;
+  }
+  .slider__demonstration {
+    max-height: 400px;
+    padding: 20px 44px 20px 40px;
   }
   .slider__footer {
     display: flex;

@@ -58,6 +58,7 @@
     line-height: 21px
     text-decoration: none
     padding: 0 40px
+    white-space: nowrap
     color: #000
 .info-text
   font-family: FuturaPT, sans-serif
@@ -88,14 +89,14 @@
 @media (max-width: 768px)
   .description
     margin-top: 0
-    margin-left: 40px
+    margin-left: 10px
     grid-auto-columns: minmax(min-content, max-content)
     grid-template-areas: "head" "select" "sizes" "info"
     &__select-wrapper
       flex-direction: column
       margin-bottom: 35px
-    &__size-wrapper
-      margin-bottom: 15px
+    &__size-link
+      padding: 0 10px
   .select-section-wrapper
     display: none
 
@@ -104,10 +105,13 @@
     grid-template-areas: "head" "sizes" "select" "info"
     margin-left: 0
     &__head
-      margin-bottom: 29px
+      margin-bottom: 19px
+    &__icon-return
+      top: 5px
+      right: 10px
     &__size-link
       font-size: 16px
-      white-space: nowrap
+      padding: 0
     &__title
       font-size: 20px
       line-height: 24px

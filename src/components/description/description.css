@@ -68,6 +68,7 @@
   line-height: 21px;
   text-decoration: none;
   padding: 0 40px;
+  white-space: nowrap;
   color: #000;
 }
 
@@ -106,7 +107,7 @@
 @media (max-width: 768px) {
   .description {
     margin-top: 0;
-    margin-left: 40px;
+    margin-left: 10px;
     grid-auto-columns: minmax(min-content, max-content);
     grid-template-areas: "head" "select" "sizes" "info";
   }
@@ -114,8 +115,8 @@
     flex-direction: column;
     margin-bottom: 35px;
   }
-  .description__size-wrapper {
-    margin-bottom: 15px;
+  .description__size-link {
+    padding: 0 10px;
   }
 
   .select-section-wrapper {
@@ -128,11 +129,15 @@
     margin-left: 0;
   }
   .description__head {
-    margin-bottom: 29px;
+    margin-bottom: 19px;
+  }
+  .description__icon-return {
+    top: 5px;
+    right: 10px;
   }
   .description__size-link {
     font-size: 16px;
-    white-space: nowrap;
+    padding: 0;
   }
   .description__title {
     font-size: 20px;
