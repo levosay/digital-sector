@@ -16,7 +16,7 @@ const Description = ({dataSize, setDataSize}) => {
       <div className="description__head">
         <img className="description__icon-return" src={returnIcon} alt="Back"/>
         <h1 className="description__title">Пиджак CLASP</h1>
-        <span className="description__sum">27000 руб.</span>
+        <span className="description__sum">27 000 руб.</span>
       </div>
 
       <div className="description__select-wrapper">

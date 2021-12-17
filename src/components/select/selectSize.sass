@@ -1,18 +1,19 @@
 @font-face
-  font-family: 'FuturaPT'
+  font-family: 'FuturaPT_m'
   src: local('FuturaPT'), url(/public/fonts/FuturaPT-medium.ttf) format('opentype')
 @font-face
-  font-family: 'FuturaPT'
+  font-family: 'FuturaPT_r'
   src: local('FuturaPT'), url(/public/fonts/FuturaPT-regular.ttf) format('opentype')
 
 .select
   position: relative
   min-width: 233px
-  font-family: FuturaPT, sans-serif
+  font-family: FuturaPT_m, sans-serif
   font-style: normal
   font-weight: 500
   font-size: 16px
   line-height: 21px
+  letter-spacing: 0.1em
   &-list
     position: absolute
     width: 100%
@@ -32,10 +33,10 @@
     padding-left: 18px
     height: 50px
     margin: 0
-    border: 1px solid #000
     box-sizing: border-box
     background-color: #fff
     text-transform: uppercase
+    border: 1px solid #000
     &:hover
       cursor: pointer
       background-color: #EEE
@@ -47,9 +48,8 @@
       padding-left: 18px
       height: 50px
       margin: 0
-      border-top: 1px solid #000
-      border-left: 1px solid #000
       background-color: #EEE
+      border: none
 
 @media (max-width: 768px)
   .select
@@ -60,6 +60,7 @@
 @media (max-width: 320px)
   .select
     height: 40px
+    font-family: FuturaPT_r, sans-serif
     font-weight: normal
     &__option
       height: 40px

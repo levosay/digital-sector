@@ -7,11 +7,13 @@ const SelectSize = ({dataSize}) => {
   const [open, setOpen] = useState(false)
   const [select, setSelect] = useState(dataSize[0].title)
 
+
+
   const normalizedArray = dataSize.filter(item => item.active)
 
   const openSelect = (value) => {
-    setSelect(value)
     setOpen(prev => !prev)
+    setSelect(value)
   }
 
   return (
@@ -29,7 +31,7 @@ const SelectSize = ({dataSize}) => {
             <li
               key={item.id}
               className="select__option"
-              onClick={() => openSelect(item.title)}
+              onClick={(event) => openSelect(item.title)}
             >
               {item.title}
             </li>
@@ -37,7 +39,7 @@ const SelectSize = ({dataSize}) => {
           (
           <li
             className="select__option select__option-mane"
-            onClick={() => setOpen(prev => !prev)}
+            onClick={(event) => openSelect(event.target.innerText)}
           >
             {select}
           </li>

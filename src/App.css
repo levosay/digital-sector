@@ -6,7 +6,7 @@ body {
 .App {
   justify-content: center;
   display: grid;
-  grid-template-columns: 10% 20.5% 50%;
+  grid-template-columns: max-content;
   grid-template-rows: 182px 150px 1fr 1fr;
   grid-template-areas: "crumbs slider description" "feature slider description" "feature slider info" "feature slider info";
 }
@@ -14,6 +14,7 @@ body {
 .description-info {
   grid-area: info;
   max-width: 453px;
+  margin-top: 6px;
   margin-left: 126px;
 }
 

@@ -4,7 +4,7 @@
 }
 .bread-crumbs {
   grid-area: crumbs;
-  margin-top: 99px;
+  margin-top: 105px;
 }
 .bread-crumbs__img {
   opacity: 0.3;
