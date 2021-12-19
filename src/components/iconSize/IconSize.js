@@ -1,6 +1,6 @@
 import React from 'react'
 import '../../fonts/styleFonts.css'
-import './iconSize.css'
+import './iconSize.sass'
 
 const IconSize = ({dataSize}) => {
   return (

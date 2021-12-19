@@ -2,7 +2,7 @@ import React, {useEffect} from 'react'
 import dataSlider from './dataSlider'
 import {Carousel} from 'react-responsive-carousel'
 import { isDesktop, isTablet, isMobileOnly} from 'react-device-detect'
-import './slider.css'
+import './slider.sass'
 
 const Slider = () => {
 

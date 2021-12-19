@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import arrowSelectOpen from '../../img/icon/arrow-select-open.svg'
 import arrowSelectClose from '../../img/icon/arrow-select-close.svg'
 import '../../fonts/styleFonts.css'
-import './selectSize.css'
+import './selectSize.sass'
 
 const SelectSize = ({dataSize}) => {
   const [open, setOpen] = useState(false)

@@ -5,7 +5,7 @@ import IconSize from '../iconSize/IconSize'
 import returnIcon from '../../img/icon/return.svg'
 import favoriteIcon from '../../img/icon/favorite.svg'
 import '../../fonts/styleFonts.css'
-import './description.css'
+import './description.sass'
 
 const Description = ({dataSize, setDataSize}) => {
   const [favorite, setFavorite] = useState(false)

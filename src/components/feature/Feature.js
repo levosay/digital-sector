@@ -2,7 +2,7 @@ import React from 'react'
 import feature1 from '../../img/feature/feature_1.svg'
 import feature2 from '../../img/feature/feature_2.svg'
 import feature3 from '../../img/feature/feature_3.svg'
-import './feature.css'
+import './feature.sass'
 
 const Feature = () => {
   return (
