@@ -1,7 +1,6 @@
 import React from 'react'
 import iconHome from '../../img/icon/home.svg'
 import iconArrowNext from '../../img/icon/arrow-next.svg'
-import '../../fonts/styleFonts.css'
 import './bread-crumbs.sass'
 
 const BreadCrumbs = () => {

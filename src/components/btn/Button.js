@@ -1,7 +1,6 @@
 import React from 'react'
 import favoriteIcon from '../../img/icon/favoriteInBtn.svg'
 import favoriteIconOn from '../../img/icon/favorite-icon-btn-on.svg'
-import '../../fonts/styleFonts.css'
 import './button.sass'
 
 const Button = ({onClick, favorite, setFavorite, children}) => {
