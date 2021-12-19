@@ -7,9 +7,9 @@ import DataSize from '../src/components/select/dataSelect'
 import './App.css'
 import './components/breadCrumbs/bread-crumbs.css'
 import './components/feature/feature.css'
-import './components/slider/slider.css'
 import './components/description/description.css'
-
+import "react-responsive-carousel/lib/styles/carousel.min.css"
+import './components/slider/slider.css'
 
 function App() {
   const [dataSize, setDataSize] = useState(DataSize)

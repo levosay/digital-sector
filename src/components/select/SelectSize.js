@@ -30,8 +30,8 @@ const SelectSize = ({dataSize}) => {
           normalizedArray.map(item => (
             <li
               key={item.id}
-              className="select__option"
-              onClick={(event) => openSelect(item.title)}
+              className={open ? "select__option active" : "select__option"}
+              onClick={() => openSelect(item.title)}
             >
               {item.title}
             </li>

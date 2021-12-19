@@ -36,7 +36,6 @@
     box-sizing: border-box
     background-color: #fff
     text-transform: uppercase
-    border: 1px solid #000
     &:hover
       cursor: pointer
       background-color: #EEE
@@ -50,6 +49,14 @@
       margin: 0
       background-color: #EEE
       border: none
+
+.active
+  &:first-child
+    border: 1px solid #000
+  &:not(first-child)
+    border-bottom: 1px solid #000
+    border-right: 1px solid #000
+    border-left: 1px solid #000
 
 @media (max-width: 768px)
   .select

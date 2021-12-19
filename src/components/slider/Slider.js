@@ -1,44 +1,49 @@
-import React, {useState} from 'react'
+import React, {useEffect} from 'react'
 import dataSlider from './dataSlider'
-import manePants from '../../img/pants/pants_1.png'
+import {Carousel} from 'react-responsive-carousel'
+import { isDesktop, isTablet, isMobileOnly} from 'react-device-detect'
 import './slider.css'
 
 const Slider = () => {
-  const [pants, setPants] = useState(false)
 
-  const togglePants = (item) => {
-    setPants(item)
+  const carouselProps = () => ({
+    showArrows: false,
+    infiniteLoop: true,
+    swipeScrollTolerance: 20,
+    showStatus: false,
+    showThumbs: isDesktop || isTablet,
+    showIndicators: isMobileOnly,
+    thumbWidth: 67,
+    emulateTouch: true
+  })
+
+  useEffect(() => {
+    document.querySelector('.thumbs')
+      .addEventListener('mouseover', dispatcherEvent)
+    return () => {
+      document.querySelector('.thumbs')
+        .removeEventListener('mouseover', dispatcherEvent)
+    }
+  }, [])
+
+  const dispatcherEvent = (event) => {
+    if (event.target.className === 'thumb') {
+      event.target.click()
+    }
   }
 
   return (
     <div className="slider">
-
-      <div className="slider__demonstration">
-        <img
-          className="demonstration__img"
-          src={pants ? pants.url : manePants}
-          alt={ pants ? pants.title : 'XS'}
-        />
-      </div>
-
-      <div className="slider__footer">
-        {
-          dataSlider.map(item => (
-            <div
-              key={item.id}
-              className="list-wrapper"
-              onMouseEnter={() => togglePants(item)}
-            >
-              <img
-                className="list-wrapper__img"
-                src={item.url}
-                alt={item.title}
-              />
-            </div>
-          ))
-        }
-      </div>
-
+      <Carousel {...carouselProps()}>
+        {dataSlider.map(item => (
+          <img
+            key={item.id}
+            className="slide__img"
+            src={item.url}
+            alt={item.title}
+          />
+        ))}
+      </Carousel>
     </div>
   )
 }
