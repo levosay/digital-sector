@@ -4,11 +4,7 @@ import Feature from './components/feature/Feature'
 import Slider from './components/slider/Slider'
 import Description from './components/description/Description'
 import DataSize from '../src/components/select/dataSelect'
-import './components/breadCrumbs/bread-crumbs.sass'
-import './components/feature/feature.sass'
-import './components/description/description.sass'
 import "react-responsive-carousel/lib/styles/carousel.min.css"
-import './components/slider/slider.sass'
 import './fonts/styleFonts.css'
 import './App.sass'
 
