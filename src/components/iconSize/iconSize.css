@@ -1,7 +1,3 @@
-@font-face {
-  font-family: "FuturaPT";
-  src: local("FuturaPT"), url(/public/fonts/FuturaPT-regular.ttf) format("opentype");
-}
 .size-icon {
   display: flex;
 }
@@ -25,7 +21,7 @@
   align-items: center;
   width: 41px;
   height: 41px;
-  font-family: FuturaPT, sans-serif;
+  font-family: FuturaPT_r, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;

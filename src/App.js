@@ -4,12 +4,14 @@ import Feature from './components/feature/Feature'
 import Slider from './components/slider/Slider'
 import Description from './components/description/Description'
 import DataSize from '../src/components/select/dataSelect'
-import './App.css'
 import './components/breadCrumbs/bread-crumbs.css'
 import './components/feature/feature.css'
 import './components/description/description.css'
 import "react-responsive-carousel/lib/styles/carousel.min.css"
 import './components/slider/slider.css'
+import './fonts/styleFonts.css'
+import './App.css'
+
 
 function App() {
   const [dataSize, setDataSize] = useState(DataSize)

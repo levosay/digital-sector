@@ -17,18 +17,16 @@ const Slider = () => {
     emulateTouch: true
   })
 
-  // useEffect(() => {
-  //   if (isDesktop) {
-  //     console.log('12312312')
-  //     document.querySelector('.thumbs')
-  //       .addEventListener('mouseover', dispatcherEvent)
-  //     return () => {
-  //       document.querySelector('.thumbs')
-  //         .removeEventListener('mouseover', dispatcherEvent)
-  //     }
-  //   }
-  //
-  // }, [])
+  useEffect(() => {
+    if (isDesktop) {
+      document.querySelector('.thumbs')
+        .addEventListener('mouseover', dispatcherEvent)
+      return () => {
+        document.querySelector('.thumbs')
+          .removeEventListener('mouseover', dispatcherEvent)
+      }
+    }
+  }, [])
 
   const dispatcherEvent = (event) => {
     if (event.target.className === 'thumb') {

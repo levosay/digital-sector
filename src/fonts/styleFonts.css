@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Inter";
+  src: local("Inter"), url(/public/fonts/Inter-Bold.ttf) format("opentype");
+}
+@font-face {
+  font-family: "FuturaPT_m";
+  src: local("FuturaPT"), url(/public/fonts/FuturaPT-medium.ttf) format("opentype");
+}
+@font-face {
+  font-family: "FuturaPT_r";
+  src: local("FuturaPT"), url(/public/fonts/FuturaPT-regular.ttf) format("opentype");
+}
+
+/*# sourceMappingURL=styleFonts.css.map */
