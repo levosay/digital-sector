@@ -1,10 +1,10 @@
 import React, {useState} from 'react'
-import Button from '../btn/Button'
-import SelectSize from '../select/SelectSize'
-import IconSize from '../iconSize/IconSize'
+import Btn from '../Btn/Btn'
+import SelectSize from '../SelectSize/SelectSize'
+import IconSize from '../IconSize/IconSize'
 import returnIcon from '../../img/icon/return.svg'
 import favoriteIcon from '../../img/icon/favorite.svg'
-import './description.sass'
+import './Description.sass'
 
 const Description = ({dataSize, setDataSize}) => {
   const [favorite, setFavorite] = useState(false)
@@ -23,12 +23,12 @@ const Description = ({dataSize, setDataSize}) => {
           dataSize={dataSize}
           setDataSize={setDataSize}
         />
-        <Button
+        <Btn
           favorite={favorite}
           setFavorite={setFavorite}
         >
           в корзину
-        </Button>
+        </Btn>
       </div>
 
       <div className="description__size-wrapper">

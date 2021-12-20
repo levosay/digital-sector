@@ -1,7 +1,7 @@
 import React from 'react'
 import iconHome from '../../img/icon/home.svg'
 import iconArrowNext from '../../img/icon/arrow-next.svg'
-import './bread-crumbs.sass'
+import './BreadCrumbs.sass'
 
 const BreadCrumbs = () => {
   return (

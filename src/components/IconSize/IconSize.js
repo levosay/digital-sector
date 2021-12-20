@@ -1,5 +1,5 @@
 import React from 'react'
-import './iconSize.sass'
+import './IconSize.sass'
 
 const IconSize = ({dataSize}) => {
   return (

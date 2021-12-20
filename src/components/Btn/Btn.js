@@ -1,9 +1,9 @@
 import React from 'react'
 import favoriteIcon from '../../img/icon/favoriteInBtn.svg'
 import favoriteIconOn from '../../img/icon/favorite-icon-btn-on.svg'
-import './button.sass'
+import './Btn.sass'
 
-const Button = ({onClick, favorite, setFavorite, children}) => {
+const Btn = ({onClick, favorite, setFavorite, children}) => {
   return (
     <div className="button">
       <button
@@ -22,4 +22,4 @@ const Button = ({onClick, favorite, setFavorite, children}) => {
   )
 }
 
-export default Button
+export default Btn

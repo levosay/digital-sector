@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import arrowSelectOpen from '../../img/icon/arrow-select-open.svg'
 import arrowSelectClose from '../../img/icon/arrow-select-close.svg'
-import './selectSize.sass'
+import './SelectSize.sass'
 
 const SelectSize = ({dataSize}) => {
   const [open, setOpen] = useState(false)
