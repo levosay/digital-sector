@@ -30,7 +30,7 @@
 .carousel .thumb {
   transition: none !important;
   height: 67px;
-  padding: 4px 13px !important;
+  padding: 4px 15px !important;
   margin: 0 !important;
   box-sizing: border-box !important;
   border: none !important;
@@ -40,13 +40,13 @@
 
 .carousel .thumb:hover {
   box-sizing: border-box !important;
-  padding: 2px 11px !important;
+  padding: 2px 13px !important;
   border: 2px solid #000 !important;
 }
 
 .carousel .thumb.selected {
   box-sizing: border-box !important;
-  padding: 2px 11px !important;
+  padding: 2px 13px !important;
   border: 2px solid #000 !important;
 }
 
